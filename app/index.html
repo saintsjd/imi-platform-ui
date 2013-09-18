@@ -1,0 +1,320 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>test</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+        <nav class="navbar navbar-default" role="navigation" id="topnav">
+            <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">IMI Analyst</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+            </div><!-- .container -->
+        </nav>
+
+        <div id="filter-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-1" id="filter-bar-label">
+                        <p class="text-center" style="padding-top:12px;">
+                        <span class="glyphicon glyphicon-filter"></span>
+                        <br>
+                        <small>Data<br>Filters</small>
+                        </p>
+                    </div>
+                    <div class="col-xs-3 filter-btn">
+                        <a href="#" id="product-filter-btn">
+                        <strong>Products</strong>
+                        <br>
+                        <small>Abrasives, Brushes, Chemicals...</small>
+                        </a>
+                    </div>
+                    <div class="col-xs-3 filter-btn">
+                        <a href="#" id="geo-filter-btn">
+                            <strong>Geography</strong>
+                            <br>
+                            <small>35 Counties, AZ, CO, UT</small>
+                        </a>
+                    </div>
+                    <div class="col-xs-3 filter-btn">
+                        <a href="#" id="seg-filter-btn">
+                        <strong>Customer Segment</strong>
+                        <br>
+                        <small>2000-2599, 2800-3299, 3333-7777, 8000-9000 </small>
+                        </a>
+                    </div>
+                    <div class="col-xs-2 filter-btn">
+                        <a href="#" id="size-filter-btn">
+                        <strong>Company Size</strong>
+                        <br>
+                        <small>All sizes</small>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="product-filter" class="filter">
+            <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h4>Choose Products:</h4>
+                    <form role="form">
+                      <div class="form-group">
+                        <label class="sr-only" for="exampleInputEmail1">Search</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Search for a Product...">
+                      </div>
+                      <div class="form-group">
+                        <label class="sr-only" for="exampleInputPassword1">Products</label>
+                        <textarea class="form-control" rows="10">Product selection tree</textarea>
+                      </div>
+                      <button type="submit" class="btn btn-primary update-btn">Update Report</button>
+                      <a href="#">Discard Changes</a>
+                    </form>
+                </div>
+                <div class="col-sm-6">
+                    <h4>Included in the report:</h4>
+                    <h4><span class="label label-primary">Abrasives x</span> </h4>
+                    <h4><span class="label label-primary">Chemicals x</span> </h4>
+                    <h4><span class="label label-primary">Brushes x</span></h4>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div id="geo-filter" class="filter">
+            <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h4>Choose Geography:</h4>
+                    <form role="form">
+                      <div class="form-group">
+                        <label class="sr-only" for="exampleInputEmail1">Search</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Search for a county, state, or province...">
+                      </div>
+                      <div class="form-group">
+                        <label class="sr-only" for="exampleInputPassword1">Geography</label>
+                        <textarea class="form-control" rows="10">Geography selection tree</textarea>
+                      </div>
+                      <button type="submit" class="btn btn-primary update-btn">Update Report</button>
+                      <a href="#">Discard Changes</a>
+                    </form>
+                </div>
+                <div class="col-sm-6">
+                    <h4>Included in the report:</h4>
+                    <h4><span class="label label-primary">US - Arizona - Pima x</span></h4>
+                    <h4><span class="label label-primary">US - Arizona - Maricopa x</span></h4> 
+                    <h4><span class="label label-primary">US - Colorado - Boulder x</span></h4> 
+                    <h4><span class="label label-primary">US - Colorado - Denver x</span></h4> 
+                </div>
+            </div>
+            </div>
+        </div>
+        <div id="seg-filter" class="filter">
+            <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h4>Choose Customer Segments:</h4>
+                    <form role="form">
+                      <div class="form-group">
+                        <div class="btn-group" data-toggle="buttons">
+                          <label class="btn btn-default">
+                            <input type="radio" name="options" id="option1"> SIC
+                          </label>
+                          <label class="btn btn-default">
+                            <input type="radio" name="options" id="option2"> NAICS
+                          </label>
+                        </div>  
+                      </div>
+                      <div class="form-group">
+                        <label class="sr-only" for="exampleInputEmail1">Search</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Search for a SIC or NAICS...">
+                      </div>
+                      <div class="form-group">
+                        <label class="sr-only" for="exampleInputPassword1">Code</label>
+                        <textarea class="form-control" rows="10">SIC or NAICS selection tree</textarea>
+                      </div>
+                      <button type="submit" class="btn btn-primary update-btn">Update Report</button>
+                      <a href="#">Discard Changes</a>
+                    </form>
+                </div>
+                <div class="col-sm-6">
+                    <h4>Included in the report:</h4>
+                    <h4><span class="label label-primary">1200-1399 x</span></h4>
+                    <h4><span class="label label-primary">1500 x</span></h4> 
+                    <h4><span class="label label-primary">2000-3999 x</span></h4> 
+                    <h4><span class="label label-primary">4500-5000 x</span></h4> 
+                </div>
+            </div>
+            </div>
+        </div>
+        <div id="size-filter" class="filter">
+            <div class="container">
+            <h4>Choose Company Sizes</h4>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="">
+                1-9 Employees
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="">
+                10-19 Employees
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="">
+                20-49 Employees
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="">
+                50-99 Employees
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="">
+                100-499 Employees
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="">
+                500-999 Employees
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="">
+                1000+ Employees
+              </label>
+            </div>
+              <button type="submit" class="btn btn-primary update-btn">Update Report</button>
+              <a href="#">Discard Changes</a>
+
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-10">
+                    <h1>Report Name here</h1>
+                </div>
+                <div class="col-xs-2">
+                    <div class="btn-group pull-right" style="padding-top:22px;">
+                      <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-export"></span></button>
+
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                          <span class="glyphicon glyphicon-cog"></span>
+                          <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu pull-right">
+                          <li><a href="#">Save Filter as...</a></li>
+                          <li><a href="#">Load a filter</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+
+            </div>        
+            <h2>Market Total: $234M spend across 12K Companies</h2>
+            <br>
+            <ul class="nav nav-tabs nav-justified">
+              <li class="active"><a href="#geo-data" data-toggle="tab">Geography</a></li>
+              <li><a href="#seg-data" data-toggle="tab">Segment</a></li>
+              <li><a href="#size-data" data-toggle="tab">Company Size</a></li>
+              <li><a href="#prospect-data" data-toggle="tab">Prospects</a></li>
+            </ul>
+
+            <div class="tab-content">
+              <div class="tab-pane active" id="geo-data">
+                <h3>Estimated Demand by Geography</h3>
+                <p>data here...</p>
+              </div>
+              <div class="tab-pane" id="seg-data">
+                <h3>Estimated Demand by Customer Segment</h3>
+                <p>data here...</p>
+              </div>
+              <div class="tab-pane" id="size-data">
+                <h3>Estimated Demand by Size Data</h3>
+                <p>data here...</p>
+              </div>
+              <div class="tab-pane" id="prospect-data">
+                <h3>Prospects</h3>
+                <p>data here...</p>
+              </div>
+            </div>
+
+        </div>
+
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="bower_components/jquery/jquery.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+
+        <!-- build:js scripts/main.js -->
+        <script data-main="scripts/main" src="bower_components/requirejs/require.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
