@@ -80,7 +80,7 @@ background: #00adef;
     line-height: 1.1em;
 }
 
-.filter-btn.active {
+.filter-btn.active, .filter-btn:hover {
     background-color: rgb(231, 231, 231);    
 }
 .filter {
