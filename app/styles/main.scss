@@ -2,6 +2,10 @@ $icon-font-path: "../bower_components/sass-bootstrap/fonts/";
 
 @import 'sass-bootstrap/lib/bootstrap';
 
+body {
+    color: #595959;
+}
+
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
@@ -13,12 +17,12 @@ h1, h2, h3, h4, h5 {
     font-weight: normal;
 }
 h1, h4 {
-    color: #00ADEF;    
+    color: #3299BB;    
 }
 
 .btn-primary {
-border: 1px solid #00adef;
-background: #00adef;
+border: 1px solid #3299BB;
+background: #3299BB;
 font-weight: bold;
 color: #ffffff;    
 }
@@ -28,7 +32,7 @@ background: #00adef;
 }
 
 #topnav {
-    background-color: #00AEEF;
+    background-color: #3299BB;
     border-radius: 0;
     border: none;
     margin: 0;
@@ -45,26 +49,46 @@ background: #00adef;
 }
 
 #filter-bar {
-    background-color: #f5f5f5;
+    background-color: #E9E9E9;
     color: #777777;
-    border-bottom: 1px solid rgb(231, 231, 231);
+    border-bottom: 1px solid #BCBCBC;
+    line-height: 1.3em;
+    padding: 0 0 10px 0;
 }
-#filter-bar small {
-    color: #aaaaaa;
+
+#filter-bar h5 {
+    margin-bottom: 5px;
 }
-#filter-bar-label .glyphicon {
-    font-size: 24px;
+
+#filter-bar ul {
+    padding: 0 0 0 16px;
 }
+
+#filter-bar .filter-description {
+    font-size: 0.8em;
+    line-height: 1.0em;
+    padding:0;
+    margin: 0 0 4px 8px;
+}
+
+
+
+#summary {
+    background-color:#BCBCBC;
+}
+
+#summary h5 {
+    font-size: 0.8em;    
+    margin: 3px 0;
+}
+
 #filter-bar-label {
-    line-height: 1.1em;
     font-weight: bold;
-}
-#filter-bar-label small {
-    color: #777777;
+    padding-top:3px;
+    font-size: 0.8em;
 }
 #filter-bar .filter-btn {
-    border-left: 1px solid rgb(231, 231, 231);
-    height: 90px;
+    border-left: 1px solid #BCBCBC;
     overflow: hidden;
 }
 #filter-bar .filter-btn a {
@@ -72,6 +96,9 @@ background: #00adef;
     display: block;
     padding-top: 12px;
     padding-bottom: 12px;
+    height: 90px;
+    font-size: 0.8em;
+    line-height: 1.4em;
 }
 #filter-bar .filter-btn a:hover {
     text-decoration: none;
