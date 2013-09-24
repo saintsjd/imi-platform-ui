@@ -20,6 +20,10 @@ h1, h4 {
     color: #3299BB;    
 }
 
+a {
+    color: #3299BB;
+}
+
 .btn-primary {
 border: 1px solid #3299BB;
 background: #3299BB;
@@ -52,7 +56,7 @@ background: #00adef;
     background-color: #E9E9E9;
     color: #777777;
     border-bottom: 1px solid #BCBCBC;
-    padding: 0 0 10px 0;
+    padding: 0 0 7px 0;
 }
 
 #market-summary h2 {
@@ -68,16 +72,10 @@ background: #00adef;
 
 #filter-summary ul {
     padding: 0 0 0 16px;
-    margin: 0;
-}
-
-#filter-bar .filter-description {
-    padding:0;
-    margin: 0 0 4px 8px;
 }
 
 #filter-update-btn {
-    margin-top: 10px;
+    margin: 10px 0 10px 0;
 }
 .filter {
     background-color: rgb(231, 231, 231);
