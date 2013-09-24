@@ -8,7 +8,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>test</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
@@ -59,20 +59,21 @@
         <div id="filter-bar">
           <div class="container">
             <div class="row">
-            <div class="col-sm-3">
+            <div class="col-sm-3 col-md-2" id="market-summary">
               <h5>Market Summary</h5>
-              <h3 style="margin:0;">$234M</h3>
+              <h2>$234M</h2>
               <p><small>19K Locations</small></p>
             </div>
-            <div class="col-sm-7">
-              <h5>Included in this Report:</h5>
-              <p class="filter-description">Products: <strong>Abrasives, Brushes, Chemicals</strong></p>
-                <p class="filter-description">Geography: <strong>35 Counties, AZ, CO, UT</strong></p>
-                <p class="filter-description">Segment: <strong>2000-2599, 2800-3299, 3333-7777</strong></p>
-                <p class="filter-description">Company Size: <strong>All Sizes</strong></p>
+            <div class="col-sm-6 col-md-8" id="filter-summary">
+              <h5>Included in this Report</h5>
+              <ul>
+                <li class="filter-description">Abrasives, Brushes, Chemicals</li>
+                <li class="filter-description">35 Counties, AZ, CO, UT</li>
+                <li class="filter-description">All Company Sizes; SIC 2000-2599, 2800-3299, 3333-7777</li>
+              </ul>
             </div>
-            <div class="col-sm-2"><br>
-              <button type="submit" class="pull-right btn btn-primary update-btn"><span class="glyphicon glyphicon-cog"></span> Modify Report</button>
+            <div class="col-sm-3 col-md-2">
+              <button type="submit" id="filter-update-btn" class="btn btn-block btn-primary update-btn"><span class="glyphicon glyphicon-cog"></span> Modify Report</button>
             </div>
             </div>
           </div>
