@@ -33,14 +33,14 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Industrial Market Report: Saved Report Name Here</a>
+            <a class="navbar-brand" href="#">Industrial Market Report: <small>Saved Report Name Here</small></a>
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#">About</a></li>
-              <li><a href="#">Support</a></li>
+              <li><a href="#" id="support-link">Support</a></li>
               <li><a href="#">Settings</a></li>
               <li><a href="#">Load/Save Report</a></li>
             </ul>
@@ -48,7 +48,18 @@
             </div><!-- .container -->
         </nav>
 
-        <div id="filter-bar">
+        <div id="support-bar" style="display:none;">
+          <div class="container">
+            <div class="row">
+            <div class="col-sm-12 text-center" id="support">
+              <button type="button" class="close" aria-hidden="true">&times;</button>
+              <h4>We are here to help: (123) 456-7890 or support@imidata.com</h4>
+            </div>
+          </div>
+          </div>
+        </div>
+
+        <div id="filter-bar" data-spy="affix" data-offset-top="200">
           <div class="container">
             <div class="row">
             <div class="col-sm-3 col-md-2" id="market-summary">
@@ -65,7 +76,7 @@
               </ul>
             </div>
             <div class="col-sm-3 col-md-2 text-center">
-              <button type="submit" id="filter-update-btn" class="btn btn-block btn-primary update-btn"><span class="glyphicon glyphicon-cog"></span> Modify Report</button>
+              <button type="submit" id="filter-update-btn" class="btn btn-block btn-primary update-btn">Modify Report</button>
             </div>
             </div>
           </div>
@@ -299,6 +310,24 @@
                 <p>data here...</p>
               </div>
             </div>
+
+
+<div id="lipsum">
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae arcu leo. Vestibulum viverra blandit aliquet. Pellentesque sodales dapibus ipsum, a venenatis orci consectetur at. Proin sodales diam elit, ut posuere lacus vehicula non. Phasellus lacus ligula, feugiat vitae egestas in, sollicitudin ac odio. Suspendisse imperdiet est id facilisis pellentesque. In a consectetur mauris. Mauris nec magna elementum, venenatis sem sit amet, semper nibh. In commodo ut eros sit amet sodales. Vestibulum fringilla mi lacus, quis tincidunt augue condimentum nec.
+</p>
+<p>
+Vivamus in porttitor dui. Suspendisse sed ipsum mollis, varius eros et, vehicula mi. Suspendisse condimentum, magna nec pulvinar porta, est ipsum ullamcorper ante, non tincidunt magna dolor a arcu. Aliquam elementum lacus non eleifend luctus. Vivamus a dictum mauris. Sed eros quam, cursus nec nunc ac, porttitor aliquet felis. Maecenas nec mauris sed mauris rhoncus volutpat non ut nibh. Nulla vulputate ultrices dui ornare aliquam.
+</p>
+<p>
+Donec lacinia justo ipsum, ut tempus magna pulvinar et. Proin quis consequat purus. Nam mollis dolor at magna suscipit, vitae viverra libero rutrum. Aenean sapien nibh, dapibus eu aliquet tempus, tincidunt faucibus lorem. Mauris viverra cursus eros quis commodo. Vivamus euismod, neque eget egestas auctor, purus ligula interdum velit, sit amet venenatis turpis odio nec mauris. Praesent pharetra, arcu nec dapibus facilisis, massa ante congue nulla, ut sollicitudin nulla est sit amet metus. Nam sit amet risus eget tortor laoreet aliquam. Vestibulum nunc ipsum, pretium at ornare ut, aliquam nec magna. Quisque consectetur neque eget quam tincidunt ultrices. Praesent tristique justo a turpis rutrum blandit. Ut vulputate mattis augue vestibulum lobortis. Vivamus tempor iaculis purus, id consequat turpis condimentum non. Pellentesque quis rhoncus ipsum. Integer luctus ipsum eu posuere dignissim. Duis id diam eget urna consequat auctor.
+</p>
+<p>
+Pellentesque eleifend neque et lorem feugiat sollicitudin. Vivamus et porta lorem, id faucibus mi. Vivamus dignissim pharetra mi, vel mattis libero convallis viverra. Nam laoreet arcu at justo volutpat, non luctus massa imperdiet. Sed non felis risus. Integer dictum mollis odio, vel ultricies ipsum semper at. Sed tempor neque sed orci lobortis condimentum. Suspendisse sit amet semper neque. Fusce imperdiet nibh tellus, eu adipiscing arcu sodales ultrices. Aenean venenatis bibendum velit. Aliquam semper iaculis risus. Quisque suscipit risus augue, in dignissim tellus ultricies quis.
+</p>
+<p>
+In in sollicitudin sapien. Nulla elementum mi sit amet tellus suscipit vulputate. Aenean eget mi neque. Donec in congue leo. Vestibulum blandit in ligula non dapibus. Ut gravida id leo non facilisis. Aliquam condimentum dolor ante, rhoncus pretium eros pellentesque et. Sed ligula tellus, egestas nec arcu vitae, accumsan convallis ligula. Mauris faucibus metus a ligula pharetra, vel fermentum ligula sagittis. Nulla nulla leo, mollis non pretium quis, gravida sed tellus.
+</p></div>
 
         </div>
 

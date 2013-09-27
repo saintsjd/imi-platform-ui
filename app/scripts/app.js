@@ -31,6 +31,26 @@ define([], function () {
 		return false;
 	});
 
+	$("#support-link").click(function(){
+		$("#support-bar").slideToggle();
+	});
+
+	$("#support-bar .close").click(function(){
+		$("#support-bar").slideUp();
+	});
+
+	$("#filter-update-btn").click(function(){
+		$("#filter-bar").toggleClass("active");
+
+
+	});
+
+$('#filter-bar').affix({
+    offset: {
+      top: 100
+    , bottom: 10
+    }
+  })
 
     return '\'Allo \'Allo!';
 });
