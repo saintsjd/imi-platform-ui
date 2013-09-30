@@ -2,6 +2,10 @@
 define([], function () {
     'use strict';
 
+    $("#support-link,#support-bar .close").click(function(){
+    	$("#support-bar").slideToggle();
+    });
+
 	/*$('.filter-btn a').click(function(){
 		
 		var whichBtn = $(this).attr('id').split('-')[0];
