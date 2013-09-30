@@ -2,7 +2,7 @@
 define([], function () {
     'use strict';
 
-	$('.filter-btn a').click(function(){
+	/*$('.filter-btn a').click(function(){
 		
 		var whichBtn = $(this).attr('id').split('-')[0];
 		var alreadyActive = $(this).parent().hasClass('active');
@@ -29,7 +29,7 @@ define([], function () {
 		$('.filter-btn').removeClass('active');
 		$('.filter').slideUp();
 		return false;
-	});
+	});*/
 
 
     return '\'Allo \'Allo!';

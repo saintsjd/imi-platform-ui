@@ -9,84 +9,32 @@ $icon-font-path: "../bower_components/sass-bootstrap/fonts/";
     padding: 0.2em 0;
 }
 
-h1, h2, h3, h4, h5 {
-    font-weight: normal;
-}
-h1, h4 {
-    color: #00ADEF;    
+#filter-bar.well {
+	padding: 9px;
 }
 
-.btn-primary {
-border: 1px solid #00adef;
-background: #00adef;
-font-weight: bold;
-color: #ffffff;    
-}
-
-.label-primary {
-background: #00adef;
-}
-
-#topnav {
-    background-color: #00AEEF;
-    border-radius: 0;
-    border: none;
-    margin: 0;
-}
-
-#topnav .navbar-brand, #topnav .navbar-nav > li > a {
-    color: #fff;
-}
-
-#topnav .navbar-nav > .active > a, #topnav .navbar-nav > .active > a:hover, #topnav .navbar-nav > .active > a:focus,
-.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-    text-decoration: underline;
-    background: none;
-}
-
-#filter-bar {
-    background-color: #f5f5f5;
-    color: #777777;
-    border-bottom: 1px solid rgb(231, 231, 231);
-}
-#filter-bar small {
-    color: #aaaaaa;
-}
-#filter-bar-label .glyphicon {
-    font-size: 24px;
-}
 #filter-bar-label {
-    line-height: 1.1em;
-    font-weight: bold;
-}
-#filter-bar-label small {
-    color: #777777;
-}
-#filter-bar .filter-btn {
-    border-left: 1px solid rgb(231, 231, 231);
-    height: 90px;
-    overflow: hidden;
-}
-#filter-bar .filter-btn a {
-    color: #777777;
-    display: block;
-    padding-top: 12px;
-    padding-bottom: 12px;
-}
-#filter-bar .filter-btn a:hover {
-    text-decoration: none;
-}
-#filter-bar .filter-btn small {
-    line-height: 1.1em;
+  font-size: 0.9em; 
+  font-weight:bold;
+  height: 80px;
 }
 
-.filter-btn.active, .filter-btn:hover {
-    background-color: rgb(231, 231, 231);    
+#filter-bar-label .glyphicon {
+  font-size:36px;
 }
-.filter {
-    background-color: rgb(231, 231, 231);
-    color: #777777;
-    border-bottom: 1px solid rgb(231, 231, 231);
-    display: none;
-    padding-bottom: 20px;
+
+.filter-btn {
+  height: 80px;
+  display: block;
+}
+.filter-btn:hover {
+  background-color: #d7d7d7;
+}
+.filter-btn h5 {
+  font-weight: bold;
+  margin-top: 0;
+}
+
+#filters {
+  display :none;
 }
