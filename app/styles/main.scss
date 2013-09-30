@@ -9,10 +9,6 @@ $icon-font-path: "../bower_components/sass-bootstrap/fonts/";
     padding: 0.2em 0;
 }
 
-.navbar {
-	margin: 0;
-}
-
 #support-bar {
     background-color: #424242;
     color: #e9e9e9;
@@ -25,9 +21,7 @@ $icon-font-path: "../bower_components/sass-bootstrap/fonts/";
    opacity: 1.0;
 }
 
-#filter-bar.well {
-	padding: 9px;
-	margin-top: 20px;
+#filter-bar {
 }
 
 #filter-bar-label {
@@ -44,9 +38,10 @@ $icon-font-path: "../bower_components/sass-bootstrap/fonts/";
   height: 80px;
   display: block;
 }
-.filter-btn:hover {
+
+/*.filter-btn:hover, .filter-btn.active {
   background-color: #d7d7d7;
-}
+}*/
 .filter-btn h5 {
   font-weight: bold;
   margin-top: 0;
@@ -54,4 +49,5 @@ $icon-font-path: "../bower_components/sass-bootstrap/fonts/";
 
 .filter {
   display :none;
+  /*background-color: #d7d7d7;*/
 }

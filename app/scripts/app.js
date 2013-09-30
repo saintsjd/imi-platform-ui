@@ -9,23 +9,18 @@ define([], function () {
 	$('.filter-btn').click(function(){
 		
 		var whichBtn = $(this).attr('id').split('-')[0];
-		$("#"+whichBtn+"-filter").slideToggle();
-		/*var alreadyActive = $(this).parent().hasClass('active');
-		var filterOpen = $('.filter-btn.active').length;
-
+		var alreadyActive = $(this).hasClass('active')
 
 		$('.filter-btn').removeClass('active');
 		$('.filter').slideUp(function(){
 			console.log('up');
 		});
 
-		if( !alreadyActive ){
-			$('#' + whichBtn + '-filter-btn').parent().addClass('active');
-			$('#' + whichBtn + '-filter').slideDown('slow');
-			filterOpen = true;
+		if( !alreadyActive ) {
+			$("#"+whichBtn+"-filter").slideToggle();
+			$(this).toggleClass("active");			
 		}
 
-		*/
 		return false;
 	});
 
