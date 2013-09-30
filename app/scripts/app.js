@@ -6,10 +6,11 @@ define([], function () {
     	$("#support-bar").slideToggle();
     });
 
-	/*$('.filter-btn a').click(function(){
+	$('.filter-btn').click(function(){
 		
 		var whichBtn = $(this).attr('id').split('-')[0];
-		var alreadyActive = $(this).parent().hasClass('active');
+		$("#"+whichBtn+"-filter").slideToggle();
+		/*var alreadyActive = $(this).parent().hasClass('active');
 		var filterOpen = $('.filter-btn.active').length;
 
 
@@ -24,7 +25,7 @@ define([], function () {
 			filterOpen = true;
 		}
 
-
+		*/
 		return false;
 	});
 
@@ -33,7 +34,7 @@ define([], function () {
 		$('.filter-btn').removeClass('active');
 		$('.filter').slideUp();
 		return false;
-	});*/
+	});
 
 
     return '\'Allo \'Allo!';
