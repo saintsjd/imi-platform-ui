@@ -145,7 +145,42 @@
               <div id="optional-filter" class="filter">
                   <div class="row">
                       <div class="col-sm-6">
-                        <h4>Choose Company Sizes</h4>
+                          <h4>Choose Customer Segments:</h4>
+                          <form role="form">
+                            <div class="form-group">
+                              <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-default">
+                                  <input type="radio" name="options" id="option1"> SIC
+                                </label>
+                                <label class="btn btn-default">
+                                  <input type="radio" name="options" id="option2"> NAICS
+                                </label>
+                              </div>  
+                            </div>
+                            <div class="form-group">
+                              <label class="sr-only" for="exampleInputEmail1">Search</label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Search for a SIC or NAICS...">
+                            </div>
+                            <div class="form-group">
+                              <label class="sr-only" for="exampleInputPassword1">Code</label>
+                              <textarea class="form-control" rows="10">SIC or NAICS selection tree</textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary update-btn">Update Report</button>
+                            <a href="#">Discard Changes</a>
+                          </form>
+                      </div>
+                      <div class="col-sm-6">
+                          <h4>Included in the report:</h4>
+                          <h4><span class="label label-primary">1200-1399 x</span></h4>
+                          <h4><span class="label label-primary">1500 x</span></h4> 
+                          <h4><span class="label label-primary">2000-3999 x</span></h4> 
+                          <h4><span class="label label-primary">4500-5000 x</span></h4> 
+                      </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-6">
+                        <h4>Choose Company Sizes:</h4>
                         <div class="checkbox">
                           <label>
                             <input type="checkbox" value="">
@@ -188,39 +223,14 @@
                             1000+ Employees
                           </label>
                         </div>
-
-                          <h4>Choose Customer Segments:</h4>
-                          <form role="form">
-                            <div class="form-group">
-                              <div class="btn-group" data-toggle="buttons">
-                                <label class="btn btn-default">
-                                  <input type="radio" name="options" id="option1"> SIC
-                                </label>
-                                <label class="btn btn-default">
-                                  <input type="radio" name="options" id="option2"> NAICS
-                                </label>
-                              </div>  
-                            </div>
-                            <div class="form-group">
-                              <label class="sr-only" for="exampleInputEmail1">Search</label>
-                              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Search for a SIC or NAICS...">
-                            </div>
-                            <div class="form-group">
-                              <label class="sr-only" for="exampleInputPassword1">Code</label>
-                              <textarea class="form-control" rows="10">SIC or NAICS selection tree</textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary update-btn">Update Report</button>
-                            <a href="#">Discard Changes</a>
-                          </form>
-                      </div>
-                      <div class="col-sm-6">
+                    </div>
+                    <div class="col-sm-6">
                           <h4>Included in the report:</h4>
-                          <h4><span class="label label-primary">1200-1399 x</span></h4>
-                          <h4><span class="label label-primary">1500 x</span></h4> 
-                          <h4><span class="label label-primary">2000-3999 x</span></h4> 
-                          <h4><span class="label label-primary">4500-5000 x</span></h4> 
-                      </div>
+                          <p>All company sizes</p>
+                    </div>
+
                   </div>
+
               </div>
 
 
@@ -230,11 +240,27 @@
 
         </div>
 
+
+
         <div class="row">
-          <div class="col-md-12">
-        <h2>Demand by Geo</h2>
-        </div>
-        </div>
+            <div class="col-md-7">
+                <h1>Report Name here</h1>
+            </div>
+            <div class="col-md-5">
+                <div class="btn-group pull-right" style="padding-top:22px;">
+                  <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-save"></span> Export</button>
+                  <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-print"></span> Print</button>
+                  <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-floppy-disk"></span> Save Report</button>
+                  <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-folder-open"></span>  Open Report</button>
+                </div>
+            </div>
+        </div>        
+
+
+
+
+
+
 
 
         </div><!-- container -->
@@ -242,19 +268,6 @@
 
 
         <div class="container">
-            <div class="row">
-                <div class="col-xs-7">
-                    <h1>Report Name here</h1>
-                </div>
-                <div class="col-xs-5">
-                    <div class="btn-group pull-right" style="padding-top:22px;">
-                      <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-save"></span> Export</button>
-                      <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-floppy-disk"></span> Save Report</button>
-                      <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-folder-open"></span>  Open Report</button>
-                    </div>
-                </div>
-
-            </div>        
             <h2>Market Total: $234M spend across 12K Companies</h2>
             <br>
             <ul class="nav nav-tabs nav-justified">
