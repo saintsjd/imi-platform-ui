@@ -39,8 +39,7 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#"><span class="glyphicon glyphicon-home"></span> My Reports</a></li>
-              <li><a href="#">About</a></li>
+              <li class="active"><a href="#">About</a></li>
               <li><a href="#" id="support-link">Support</a></li>
               <li><a href="#">Settings</a></li>
               <li><a href="#">Log out</a></li>
@@ -249,344 +248,55 @@
             </div>
             <div class="col-md-5">
                 <div class="btn-group pull-right" style="padding-top:22px;">
-                  <button type="button" class="btn btn-default btn-md"><span class="glyphicon glyphicon-save"></span> Export</button>
-                  <button type="button" class="btn btn-default btn-md"><span class="glyphicon glyphicon-print"></span> Print</button>
-                  <!--<button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-floppy-disk"></span> Save Report</button>
-                  <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-folder-open"></span>  Open Report</button>-->
+                  <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-save"></span> Export</button>
+                  <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-print"></span> Print</button>
+                  <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-floppy-disk"></span> Save Report</button>
+                  <button type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-folder-open"></span>  Open Report</button>
                 </div>
             </div>
         </div>        
-        <!--<br>
-        <ul class="nav nav-pills">
-          <li class="active"><a href="#">Overview</a></li>
-          <li><a href="#">Profile</a></li>
-          <li><a href="#">Messages</a></li>
-        </ul>
-        <hr>-->
 
 
-        <h3>Market Summary: $234M across 23,000 locations</h3>
 
-        <p><strong>Included in this report</strong>
-          <br>Products: xxx, xxx, xxx, xxx
-          <br>Territory: xxx, xxx, xxx, xxx, 
-          <br>Customer Segments: xxx, xxx, xxx
-          <br>Company Sizes: All Sizes
-        </p>
-        <br>
+
+
+
+
+
         </div><!-- container -->
 
-        <iframe width='100%' height='475' frameBorder='0' src='http://a.tiles.mapbox.com/v3/saintsjd.map-mu9v3m5h.html?26#9/39.79798577319723/-104.94277954101561'></iframe>
 
-        <div>
+
         <div class="container">
+            <h2>Market Total: $234M spend across 12K Companies</h2>
+            <br>
+            <ul class="nav nav-tabs nav-justified">
+              <li class="active"><a href="#geo-data" data-toggle="tab">Geography</a></li>
+              <li><a href="#seg-data" data-toggle="tab">Segment</a></li>
+              <li><a href="#size-data" data-toggle="tab">Company Size</a></li>
+              <li><a href="#prospect-data" data-toggle="tab">Prospects</a></li>
+            </ul>
 
-          <h2>Demand by Geography</h2>
-          <br>
-          <div class="btn-toolbar">
-              <p class="toolbar-text"><strong>Group Data by:</strong></p>
-              <div class="btn-group" data-toggle="buttons">
-                <label class="btn btn-default">
-                  <input type="radio" name="options" id="option1"> Nation
-                </label>
-                <label class="btn btn-default">
-                  <input type="radio" name="options" id="option2"> Region <small>(USA Only)</small>
-                </label>
-                <label class="btn btn-default">
-                  <input type="radio" name="options" id="option3"> State
-                </label>
-                <label class="btn btn-default">
-                  <input type="radio" name="options" id="option3"> MSA <small>(USA Only)</small>
-                </label>
-                <label class="btn btn-default">
-                  <input type="radio" name="options" id="option3" checked> County <small>(USA Only)</small>
-                </label>
+            <div class="tab-content">
+              <div class="tab-pane active" id="geo-data">
+                <h3>Estimated Demand by Geography</h3>
+                <p>data here...</p>
               </div>
-          </div>
-          <br>
-
-
-        <div class="table-responsive">
-        <table class="table table-hover">
-          <thead>
-            <tr>
-              <th>Territory</th>
-              <th>Demand</th>
-              <th># Locations</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>US - Colorado - Boulder</td>
-              <td>$234,000</td>
-              <td>657</td>
-            </tr>
-            <tr>
-              <td>Other Location</td>
-              <td>$3,000</td>
-              <td>23</td>
-            </tr>
-            <tr>
-              <td>Other Location</td>
-              <td>$3,000</td>
-              <td>23</td>
-            </tr>
-            <tr>
-              <td>Other Location</td>
-              <td>$3,000</td>
-              <td>23</td>
-            </tr>
-            <tr>
-              <td>Other Location</td>
-              <td>$3,000</td>
-              <td>23</td>
-            </tr>
-            <tr>
-              <td>Other Location</td>
-              <td>$3,000</td>
-              <td>23</td>
-            </tr>
-            <tr>
-              <td>Other Location</td>
-              <td>$3,000</td>
-              <td>23</td>
-            </tr>
-            <tr>
-              <td>Other Location</td>
-              <td>$3,000</td>
-              <td>23</td>
-            </tr>
-            <tr>
-              <td>Other Location</td>
-              <td>$3,000</td>
-              <td>23</td>
-            </tr>
-            <tr>
-              <td>Other Location</td>
-              <td>$3,000</td>
-              <td>23</td>
-            </tr>
-          </tbody>
-        </table>
-        </div>
-
-        <ul class="pagination">
-          <li><a href="#">&laquo;</a></li>
-          <li class="active"><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li><a href="#">5</a></li>
-          <li><a href="#">&raquo;</a></li>
-        </ul>
-
-        </div>
-      </div>
-
-
-      <div style="background-color:whitesmoke;">
-        <div class="container">
-        <h2>Demand by Customer Segment</h2>
-          <br>
-          <div class="btn-toolbar">
-              <p class="toolbar-text"><strong>Group Data by:</strong></p>
-              <div class="btn-group" data-toggle="buttons">
-                <label class="btn btn-default">
-                  <input type="radio" name="options" id="option1"> SIC
-                </label>
-                <label class="btn btn-default">
-                  <input type="radio" name="options" id="option2"> NAICS</small>
-                </label>
+              <div class="tab-pane" id="seg-data">
+                <h3>Estimated Demand by Customer Segment</h3>
+                <p>data here...</p>
               </div>
-          </div>
-          <br>
+              <div class="tab-pane" id="size-data">
+                <h3>Estimated Demand by Size Data</h3>
+                <p>data here...</p>
+              </div>
+              <div class="tab-pane" id="prospect-data">
+                <h3>Prospects</h3>
+                <p>data here...</p>
+              </div>
+            </div>
 
-
-        <div class="table-responsive">
-        <table class="table table-hover">
-          <thead>
-            <tr>
-              <th>SIC Code</th>
-              <th>Demand</th>
-              <th># Locations</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>4321 Cheese Manufacturing</td>
-              <td>$234,000</td>
-              <td>657</td>
-            </tr>
-            <tr>
-              <td>Other Location</td>
-              <td>$3,000</td>
-              <td>23</td>
-            </tr>
-            <tr>
-              <td>Other Location</td>
-              <td>$3,000</td>
-              <td>23</td>
-            </tr>
-            <tr>
-              <td>Other Location</td>
-              <td>$3,000</td>
-              <td>23</td>
-            </tr>
-            <tr>
-              <td>Other Location</td>
-              <td>$3,000</td>
-              <td>23</td>
-            </tr>
-            <tr>
-              <td>Other Location</td>
-              <td>$3,000</td>
-              <td>23</td>
-            </tr>
-            <tr>
-              <td>Other Location</td>
-              <td>$3,000</td>
-              <td>23</td>
-            </tr>
-            <tr>
-              <td>Other Location</td>
-              <td>$3,000</td>
-              <td>23</td>
-            </tr>
-            <tr>
-              <td>Other Location</td>
-              <td>$3,000</td>
-              <td>23</td>
-            </tr>
-            <tr>
-              <td>Other Location</td>
-              <td>$3,000</td>
-              <td>23</td>
-            </tr>
-          </tbody>
-        </table>
         </div>
-
-        <ul class="pagination">
-          <li><a href="#">&laquo;</a></li>
-          <li class="active"><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li><a href="#">5</a></li>
-          <li><a href="#">&raquo;</a></li>
-        </ul>
-      </div>
-    </div>
-
-
-      <div class="container">
-        <h2>Prospects</h2>
-        <div class="table-responsive">
-        <table class="table table-hover">
-          <thead>
-            <tr>
-              <th>Company</th>
-              <th>Segment</th>
-              <th>County</th>
-              <th>State/Province</th>
-              <th>Demand</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Boulder Rock Gym</td>
-              <td>329200 - Rock Climbing Facilities</td>
-              <td>Boulder</td>
-              <td>CO</td>
-              <td>$55,678</td>
-            </tr>
-            <tr>
-              <td>Other Location</td>
-              <td>SIC or Naics depending on selection above</td>
-              <td>county</td>
-              <td>state</td>
-              <td>$3,456</td>
-            </tr>
-            <tr>
-              <td>Other Location</td>
-              <td>SIC or Naics depending on selection above</td>
-              <td>county</td>
-              <td>state</td>
-              <td>$3,456</td>
-            </tr>
-            <tr>
-              <td>Other Location</td>
-              <td>SIC or Naics depending on selection above</td>
-              <td>county</td>
-              <td>state</td>
-              <td>$3,456</td>
-            </tr>
-            <tr>
-              <td>Other Location</td>
-              <td>SIC or Naics depending on selection above</td>
-              <td>county</td>
-              <td>state</td>
-              <td>$3,456</td>
-            </tr>
-            <tr>
-              <td>Other Location</td>
-              <td>SIC or Naics depending on selection above</td>
-              <td>county</td>
-              <td>state</td>
-              <td>$3,456</td>
-            </tr>
-            <tr>
-              <td>Other Location</td>
-              <td>SIC or Naics depending on selection above</td>
-              <td>county</td>
-              <td>state</td>
-              <td>$3,456</td>
-            </tr>
-            <tr>
-              <td>Other Location</td>
-              <td>SIC or Naics depending on selection above</td>
-              <td>county</td>
-              <td>state</td>
-              <td>$3,456</td>
-            </tr>
-            <tr>
-              <td>Other Location</td>
-              <td>SIC or Naics depending on selection above</td>
-              <td>county</td>
-              <td>state</td>
-              <td>$3,456</td>
-            </tr>
-            <tr>
-              <td>Other Location</td>
-              <td>SIC or Naics depending on selection above</td>
-              <td>county</td>
-              <td>state</td>
-              <td>$3,456</td>
-            </tr>
-          </tbody>
-        </table>
-        </div>
-
-        <ul class="pagination">
-          <li><a href="#">&laquo;</a></li>
-          <li class="active"><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li><a href="#">5</a></li>
-          <li><a href="#">&raquo;</a></li>
-        </ul>
-
-</div>
-
-        <footer class="text-center">
-          <div class="container">
-        <p>&copy; Industrial Market Information 2013. Model fingerprint 19a8270fa8ccb9f17a207bd42552501d809e0611 2013-02.</p>
-        </div>
-      </footer>
-
-
-        
 
 
         <!-- build:js scripts/vendor.js -->
