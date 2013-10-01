@@ -2,34 +2,34 @@
 define([], function () {
     'use strict';
 
-    $("#support-link,#support-bar .close").click(function(){
-    	$("#support-bar").slideToggle();
+    $('#support-link,#support-bar .close').click(function(){
+        $('#support-bar').slideToggle();
     });
 
-	$('.filter-btn').click(function(){
-		
-		var whichBtn = $(this).attr('id').split('-')[0];
-		var alreadyActive = $(this).hasClass('active')
+    $('.filter-btn').click(function(){
 
-		$('.filter-btn').removeClass('active');
-		$('.filter').slideUp(function(){
-			console.log('up');
-		});
+        var whichBtn = $(this).attr('id').split('-')[0];
+        var alreadyActive = $(this).hasClass('active');
 
-		if( !alreadyActive ) {
-			$("#"+whichBtn+"-filter").slideToggle();
-			$(this).toggleClass("active");			
-		}
+        $('.filter-btn').removeClass('active');
+        $('.filter').slideUp(function(){
+            console.log('up');
+        });
 
-		return false;
-	});
+        if( !alreadyActive ) {
+            $('#'+whichBtn+'-filter').slideToggle();
+            $(this).toggleClass('active');
+        }
 
-	$('.update-btn').click(function(){
+        return false;
+    });
 
-		$('.filter-btn').removeClass('active');
-		$('.filter').slideUp();
-		return false;
-	});
+    $('.update-btn').click(function(){
+
+        $('.filter-btn').removeClass('active');
+        $('.filter').slideUp();
+        return false;
+    });
 
 
     return '\'Allo \'Allo!';
