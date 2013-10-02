@@ -1,0 +1,15 @@
+# Install
+
+1. Node.js  - http://nodejs.org/
+2. Install yo
+    npm install -g yo
+3. Install app
+    git clone https://github.com/saintsjd/imi-platform-ui.git
+    npm install
+    bower install
+    
+    
+# Run the app locally
+    
+    grunt server
+    (then browse to http://127.0.0.1:9000/)
